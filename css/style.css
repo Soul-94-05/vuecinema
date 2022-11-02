@@ -12,15 +12,15 @@
     --bg: #040D1F;
     --orange: #F18128;
     --black: #000;
-    --comfort: 'Comfortaa'.sans-serif;
-    --mons: 'Montserrat'.sans-serif;
-    --robot: 'Roboto'.sans-serif;
+    --comfort: 'Comfortaa' sans-serif;
+    --mons: 'Montserrat' sans-serif;
+    --robot: 'Roboto' sans-serif;
     --w: #FFF;
 }
 
 body {
     background: var(--bg);
-    font-family: var(--comfort);
+    font-family: var(--comfort) var(--mons) var(--robot);
     color: var(--w);
 }
 
@@ -127,9 +127,9 @@ body {
 }
 
 .banner {
-    height: 80%;
+    height: 78%;
     position: relative;
-    background: url(../img/bg.png) no-repeat center/cover;
+    background: url(../img/bg.png) no-repeat center right/cover;
     z-index: 10;
 }
 
@@ -169,6 +169,7 @@ body {
     line-height: 24px;
     color: #C8C8C8;
     margin-bottom: 50px;
+    max-width: 570px;
 }
 
 .banner__links {
@@ -195,10 +196,101 @@ body {
     color: #000000;
 }
 
+.films {
+    padding: 60px 0 77px;
+}
 
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
+.heading {
+    font-family: var(--comfort);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--orange);
+    color: var(--orange);
+    margin-bottom: 54px;
+}
 
+.films__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
 
+.card {
+    background: url(../img/Black_Panther.png) no-repeat center/cover;
+    max-width: 255px;
+    height: 367px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 14px 19px;
+    position: relative;
+    z-index: 10;
+}
+
+.card__bg {
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.card:nth-child(2) {
+    background: url(../img/batman.png) no-repeat center/cover;
+}
+
+.card:nth-child(3) {
+    background: url(../img/gentlemans.png) no-repeat center/cover;
+}
+
+.card:nth-child(4) {
+    background: url(../img/rings.png) no-repeat center/cover;
+}
+
+.card__icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card__time {
+    font-family: var(--mons);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 7px 27px;
+    background: rgba(7, 15, 25, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    margin-bottom: 30px;
+}
+
+.card__h {
+    font-family: var(--mons);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.card__p {
+    font-family: var(--robot);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
 
 
 
