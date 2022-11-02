@@ -122,12 +122,8 @@ body {
     width: 100%;
 }
 
-.header {
-    height: 100vh;
-}
-
 .banner {
-    height: 78%;
+    height: 80vh;
     position: relative;
     background: url(../img/bg.png) no-repeat center right/cover;
     z-index: 10;
@@ -225,8 +221,10 @@ body {
 }
 
 .card {
-    background: url(../img/Black_Panther.png) no-repeat center/cover;
-    max-width: 255px;
+    background: url(../img/Black_Panther.png) no-repeat top center/cover;
+    max-width: 335px;
+    min-width: 255px;
+    width: 100%;
     height: 367px;
     border-radius: 6px;
     display: flex;
@@ -249,15 +247,15 @@ body {
 }
 
 .card:nth-child(2) {
-    background: url(../img/batman.png) no-repeat center/cover;
+    background: url(../img/batman.png) no-repeat top center/cover;
 }
 
 .card:nth-child(3) {
-    background: url(../img/gentlemans.png) no-repeat center/cover;
+    background: url(../img/gentlemans.png) no-repeat top center/cover;
 }
 
 .card:nth-child(4) {
-    background: url(../img/rings.png) no-repeat center/cover;
+    background: url(../img/rings.png) no-repeat top center/cover;
 }
 
 .card__icon {
